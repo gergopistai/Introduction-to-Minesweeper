@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <title>Minesweeper</title>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+    <body>
+        <nav>
+            <h2>Navigation</h2>
+            <div><a href="#introduction">Introduction</a></div>
+            <div><a href="#basics">Basics</a></div>
+            <div><a href="#patterns">Patterns</a></div>
+            <hr/>
+            <h2>Links</h2>
+            <div><a href="" target="_blank">Source code</a></div>
+            <div><a href="">Link2</a></div>
+        </nav>
+
+        <div id="content">
+            <h1>Introduction to minesweeper</h1>
+            <section id="introduction">
+                <h2>Introduction</h2>
+                <p>This website will explain the basics of minesweeper and show some patterns.</p>
+            </section>
+            <hr/>
+            <section id="basics">
+                <h2>Basics of Minesweeper</h2>
+                <h3>How the game works</h3>
+                <p>A game of minesweeper is played on a grid of cells. Every cell can be opened, but the point of the game is to find (and flag) all the cells that are mines. If you click a mine you will lose the game. The game can be only be won if every non-mine cell is opened. You can open cells by left clicking on them.</p>
+                <p>Most opened cells will have a number on them. This number represents how many mines are adjacent to that given cell (adjacency here includes diagonal cells as well).</p>
+
+                <p>There are usually two game modes: <i>Normal</i> and <i>No Guess</i> (NG from now on).</p>
+                <p>Normal mode is entirely randomly generated, so there are usually a log of guessing whether a certain cell is a mine.</p>
+                <p>NG games however can be won without guessing, by simply using pattern recognition. There will be some easier patterns in the <a href="#patterns" class="remove-underline">patterns section</a></p>
+
+
+                <p>You can right click on an unopened cell to flag them. The flag is used to indicate that there is a mine there. It also prevents you from accidentally opening the given cell.</p>
+                <h3>Tips for beginners:</h3>
+                <ul>
+                    <li>Try to start every game from the center.</li>
+                    <li>Leave guessing only as a last solution.</li>
+                    <li>If a cell number is equal to the unopened cells around that cell, then all of them are mines.</li>
+                    <li>If a cell number is equal to the number of flags around it, then every other adjacent cell is save.</li>
+                    <li>The amount of mines left can sometimes help determining which of the last few cells are mines.</li>
+                    <li>You can play better if you know more patterns.</li>
+                </ul>
+            </section>
+            <hr/>
+            <section id="patterns">
+                <h2>Some patterns</h2>
+                <p>Hover over cells to display which one is a mine and which one is empty.</p>
+                <table>
+                    <tr>
+                        <td>1-1-X Pattern</td>
+                        <td>1-2-X Pattern</td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <table id="pattern-1-1-X" class="ms-grid">
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </table>
+                        </td>
+                        <td>
+                        <table id="pattern-1-2-X" class="ms-grid">
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td>
+                                    <div class="ms-mine"></div>
+                                </td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </table>
+                        </td>
+                    </tr>
+                </table>
+            </section>
+        </div>
+    </body>
+</html>

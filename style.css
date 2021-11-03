@@ -1,0 +1,149 @@
+html {
+    height: 100%;
+    background-image: url("images/background.png");
+    font-family: Consolas;
+}
+
+ul {
+    list-style-image: url("images/flag.png");
+}
+
+h1, h2, h3 {
+    color: white;
+    text-shadow: 2px 2px black;
+}
+
+a:link, a:visited {
+    color: blue;
+    text-shadow: 1px 1px white;
+}
+a:visited {
+    color: blue;
+    text-shadow: 1px 1px white;
+}
+a:hover, a:visited:hover {
+    color:whitesmoke;
+    text-shadow: 2px 1px black;
+}
+a:active, a:visited:active {
+    color: black;
+    text-shadow: 2px 1px whitesmoke;
+}
+
+.remove-underline {
+    text-decoration: none;
+}
+
+#content {
+    position: absolute;
+    /* percentage - margin * 2 - padding * 2 */
+    width: calc(70% - 32px - 64px);
+    right: 5%;
+    margin: 16px;
+    padding: 32px;
+    border: double white 6px;
+    border-top: double black 6px;
+    border-left: double black 6px;
+    border-radius: 6px;
+    background: linear-gradient(135deg, rgb(230, 230, 230), gray);
+    text-align: justify;
+}
+#content > section {
+    border-color: solid white 1px;
+}
+#content > h1 {
+    text-align: center;
+    margin: 16px auto;
+    text-decoration: underline;
+}
+#content > section > h2 {
+    text-align: center;
+    margin: 0 auto;
+}
+
+nav {
+    position: fixed;
+    /* percentage - margin * 2 - padding * 2 */
+    width: calc(15% - 32px - 16px);
+    left: 5%;
+    border: double white 6px;
+    border-top: double black 6px;
+    border-left: double black 6px;
+    border-radius: 6px;
+    padding: 8px;
+    margin: 16px;
+    overflow: auto;
+    background: linear-gradient(135deg, rgb(230, 230, 230), gray);
+    font-size: 1.2em;
+}
+nav > h2 {
+    margin: 0;
+    text-align: center;
+}
+nav > div {
+    display: block;
+}
+nav > div > a:hover {
+    display: inline-block;
+    transform: scaleX(-1);
+}
+
+#patterns > table {
+    margin: 0 auto;
+}
+#patterns > table > tr > td {
+    text-align: center;
+    border-left: solid transparent 16px;
+    border-right: solid transparent 16px;
+}
+
+table.ms-grid {
+    background-color: rgb(150, 144, 153);
+    border-collapse: collapse;
+    margin: 16px auto;
+    border: solid black 1px;
+    font-size: 1.5em;
+    user-select: none;
+}
+table.ms-grid > tr > td {
+    width: 32px;
+    height: 32px;
+    border: solid rgb(110, 106, 102) 2px;
+}
+.ms-mine {
+    display: none;
+    background: black;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+/* Patterns */
+#pattern-1-1-X > tr:nth-child(1) > *,
+#pattern-1-1-X > tr:nth-child(2) > * {
+    background-image: url("images/cell.png");
+}
+#pattern-1-1-X > tr:nth-child(3) > * {
+    color: blue;
+}
+#pattern-1-1-X > tr:nth-child(2) > td:nth-child(3):hover {
+    background-image: none;
+}
+
+#pattern-1-2-X > tr:nth-child(1) > *,
+#pattern-1-2-X > tr:nth-child(2) > * {
+    background-image: url("images/cell.png");
+}
+#pattern-1-2-X > tr:nth-child(3) > * {
+    color: blue;
+}
+#pattern-1-2-X > tr:nth-child(3) > td:nth-child(2) {
+    color: rgb(0, 255, 0);
+}
+#pattern-1-2-X > tr:nth-child(2) > td:nth-child(3):hover {
+    background-image: none;
+}
+#pattern-1-2-X > tr:nth-child(2) > td:nth-child(3):hover > * {
+    display: block;
+}
