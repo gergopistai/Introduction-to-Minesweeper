@@ -121,9 +121,6 @@ table.ms-grid > tr > td , table.ms-grid > tr > td > div:not(.ms-mine) {
 #pattern-1-2-X > tr:nth-child(3) > td:nth-child(2) {
     color: rgb(0, 255, 0);
 }
-#pattern-1-2-X > tr:nth-child(2) > td:nth-child(3):hover > * {
-    visibility: visible;
-}
 
 .ms-mine {
     visibility: hidden;
