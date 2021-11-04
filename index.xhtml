@@ -30,10 +30,9 @@
                 <p>A game of minesweeper is played on a grid of cells. Every cell can be opened, but the point of the game is to find (and flag) all the cells that are mines. If you click a mine you will lose the game. The game can be only be won if every non-mine cell is opened. You can open cells by left clicking on them.</p>
                 <p>Most opened cells will have a number on them. This number represents how many mines are adjacent to that given cell (adjacency here includes diagonal cells as well).</p>
 
-                <p>There are usually two game modes: <i>Normal</i> and <i>No Guess</i> (NG from now on).</p>
+                <p>There are usually two game modes: <i>Normal</i> and <i>No Guess</i> (NG for short).</p>
                 <p>Normal mode is entirely randomly generated, so there are usually a log of guessing whether a certain cell is a mine.</p>
                 <p>NG games however can be won without guessing, by simply using pattern recognition. There will be some easier patterns in the <a href="#patterns" class="remove-underline">patterns section</a></p>
-
 
                 <p>You can right click on an unopened cell to flag them. The flag is used to indicate that there is a mine there. It also prevents you from accidentally opening the given cell.</p>
                 <h3>Tips for beginners:</h3>
@@ -49,93 +48,92 @@
             <hr/>
             <section id="patterns">
                 <h2>Some patterns</h2>
-                <p>Hover over cells to display which one is a mine and which one is empty.</p>
-                <table>
+                <p>Hover over individual cells to see more information about them.</p>
+                
+                <h3>1-1-X Pattern</h3>
+                <p>Because of the leftmost 1, there is a mine guaranteed to be on either the first or second cell. In either case, the second 1 is satisfied, which means there can't be a mine on the third unopened cell.
+                </p>
+                <table id="pattern-1-1-X" class="ms-grid">
                     <tr>
-                        <td>1-1-X Pattern</td>
-                        <td>1-2-X Pattern</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
                     </tr>
                     <tr>
                         <td>
-                        <table id="pattern-1-1-X" class="ms-grid">
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>1</td>
-                                <td>1</td>
-                                <td>1</td>
-                                <td>1</td>
-                                <td>1</td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                        </table>
+                            <div class="tooltip-trigger">
+                                1 <span class="tooltip-text">Leftmost 1.</span>
+                            </div>
                         </td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+                
+                <h3>1-2-X Pattern</h3>
+                <p>The leftmost 1 guarantees that there is a single mine in the two cells above it. Whichever it is in, it will satisfy one mine for the 2, therefore the 2's other mine must be at the thrid position.</p>
+                <table id="pattern-1-2-X" class="ms-grid">
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
                         <td>
-                        <table id="pattern-1-2-X" class="ms-grid">
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td>
-                                    <div class="ms-mine"></div>
-                                </td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>1</td>
-                                <td>2</td>
-                                <td>1</td>
-                                <td>1</td>
-                                <td>1</td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                        </table>
+                            <div class="ms-mine"></div>
                         </td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
                     </tr>
                 </table>
             </section>
