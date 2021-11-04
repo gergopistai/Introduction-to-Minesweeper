@@ -1,2 +1,3 @@
-# Introduction-to-Minesweeper
-A simple, static website used as a short introduction to minesweeper.
+# Introduction to Minesweeper
+A simple, static website made for a small university project.
+It explains the basics of minesweeper.
