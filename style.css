@@ -26,10 +26,6 @@ a:active, a:visited:active {
     text-shadow: 2px 1px whitesmoke;
 }
 
-.remove-underline {
-    text-decoration: none;
-}
-
 #content {
     position: absolute;
     /* percentage - margin * 2 - padding * 2 */
@@ -38,9 +34,6 @@ a:active, a:visited:active {
     margin: 16px;
     padding: 32px;
     text-align: justify;
-}
-#content > section {
-    border-color: solid white 1px;
 }
 #content > h1 {
     text-align: center;
