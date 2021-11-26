@@ -104,21 +104,21 @@ table.ms-grid > tr > td , table.ms-grid > tr > td > div:not(.ms-mine) {
 /* Patterns */
 #pattern-1-1-X > tr:nth-child(1) > *,
 #pattern-1-1-X > tr:nth-child(2) > *,
-#pattern-1-2-X > tr:nth-child(1) > *,
-#pattern-1-2-X > tr:nth-child(2) > * {
+#pattern-1-2-1 > tr:nth-child(1) > *,
+#pattern-1-2-1 > tr:nth-child(2) > * {
     background-image: url("images/cell.png");
 }
 #pattern-1-1-X > tr:nth-child(3) > *,
-#pattern-1-2-X > tr:nth-child(3) > * {
+#pattern-1-2-1 > tr:nth-child(3) > * {
     color: blue;
 }
 #pattern-1-1-X > tr:nth-child(2) > td:nth-child(3):hover,
-#pattern-1-2-X > tr:nth-child(2) > td:nth-child(1):hover,
-#pattern-1-2-X > tr:nth-child(2) > td:nth-child(2):hover,
-#pattern-1-2-X > tr:nth-child(2) > td:nth-child(3):hover {
+#pattern-1-2-1 > tr:nth-child(2) > td:nth-child(1):hover,
+#pattern-1-2-1 > tr:nth-child(2) > td:nth-child(2):hover,
+#pattern-1-2-1 > tr:nth-child(2) > td:nth-child(3):hover {
     background-image: none;
 }
-#pattern-1-2-X > tr:nth-child(3) > td:nth-child(2) {
+#pattern-1-2-1 > tr:nth-child(3) > td:nth-child(2) {
     color: rgb(0, 255, 0);
 }
 
